@@ -12,6 +12,7 @@ function funcao2()
 {
     echo 'Entrei na função 2' . PHP_EOL;
     for ($i = 1; $i <= 5; $i++){
-        echo 'Salve';
+        echo $i . PHP_EOL;
     }
+    echo 'Saindo da funcao 2' . PHP_EOL;
 }
