@@ -14,5 +14,10 @@ function funcao2()
     for ($i = 1; $i <= 5; $i++){
         echo $i . PHP_EOL;
     }
+    var_dump(debug_backtrace());
     echo 'Saindo da funcao 2' . PHP_EOL;
 }
+
+echo 'Iniciando o programa principal' . PHP_EOL;
+funcao1();
+echo 'Finalizando o programa principal' . PHP_EOL;
