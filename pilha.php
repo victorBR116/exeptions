@@ -3,7 +3,13 @@
 function funcao1()
 {
     echo 'Entrei na função 1' . PHP_EOL;
-    
+    try {
+    $arrayFixo = new SplFixedArray(2);
+    $arrayFixo[3] = 'Valor';
+} catch(RuntimeException $erro){
+    echo 'Erro esperado na função 1' . PHP_EOL;
+}
+// $numero = intdiv(5, 0);
     funcao2();
     echo 'Saindo da função 1' . PHP_EOL;
 }
