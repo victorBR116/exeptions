@@ -17,7 +17,10 @@ function funcao1()
 function funcao2()
 {
     echo 'Entrei na função 2' . PHP_EOL;
-    var_dump(debug_backtrace());
+    
+    $exception = new RuntimeException('Entrei na função 2 fake taxi');
+    throw $exception;
+
     echo 'Saindo da funcao 2' . PHP_EOL;
 }
 
