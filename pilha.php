@@ -5,20 +5,19 @@ function funcao1()
     echo 'Entrei na função 1' . PHP_EOL;
     try{
     funcao2();
-    }catch(RuntimeException | DivisionByZeroError $erroOuExcecao){
-        echo $erroOuExcecao->getMessage() . PHP_EOL;
-        echo $erroOuExcecao->getLine() . PHP_EOL;
-        echo $erroOuExcecao->getTraceAsString() . PHP_EOL;
-    }
-
+    }catch(Throwable $problema){
+        echo $problema->getMessage() . PHP_EOL;
+        echo $problema->getLine() . PHP_EOL;
+        echo $problema->getTraceAsString() . PHP_EOL;
+    } 
     echo 'Saindo da função 1' . PHP_EOL;
 }
 
 function funcao2()
 {
     echo 'Entrei na função 2' . PHP_EOL;
-    
-    $exception = new RuntimeException('Entrei na função 2 fake taxi');
+    intdiv(1, 0);
+    $exception = new BadMethodCallException('Entrei na função 2 fake taxi');
     throw $exception;
 
     echo 'Saindo da funcao 2' . PHP_EOL;

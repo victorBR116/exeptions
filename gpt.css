@@ -1,0 +1,45 @@
+/* tudo criado pelo chat gpt apenas para teste*/
+.active {
+    background-color: red;
+  }
+
+  button {
+    display: inline-block;
+
+  }
+  
+  
+  
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  
+
+  button {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+
+  }
+
+  #estacionamento {
+    width: 1000px;
+    height: 590px;
+    border: 1px solid black;
+  }
+  
+  button {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+  }
+  
+  
+      
