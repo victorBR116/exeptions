@@ -9,3 +9,4 @@ function funcaoQueLancaExcecao()
 }
 
 funcaoQueLancaExcecao();
+    
